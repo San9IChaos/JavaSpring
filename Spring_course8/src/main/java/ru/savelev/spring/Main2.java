@@ -6,7 +6,7 @@ import org.hibernate.cfg.Configuration;
 import ru.savelev.spring.entity.Employee;
 
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         SessionFactory factory = new Configuration().configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Employee.class).
@@ -14,12 +14,17 @@ public class Main {
 
         try {
             Session session = factory.getCurrentSession();
-            Employee emp = new Employee("Alexander", "Smirnov", "IT", 600);
+            Employee emp = new Employee("Oleg", "Sidorov", "HR", 700);
             session.beginTransaction();
             session.save(emp);
-            session.getTransaction().commit();
+//            session.getTransaction().commit();
 
-            System.out.println(emp);
+            int myId = emp.getId();
+//            session = factory.getCurrentSession();
+//            session.beginTransaction();
+            Employee employee = session.get(Employee.class, myId);
+            session.getTransaction().commit();
+            System.out.println(employee);
             System.out.println("Done!");
         }
         finally {

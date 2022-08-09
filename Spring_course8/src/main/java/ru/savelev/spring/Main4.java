@@ -5,8 +5,10 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import ru.savelev.spring.entity.Employee;
 
+import java.util.List;
 
-public class Main {
+
+public class Main4 {
     public static void main(String[] args) {
         SessionFactory factory = new Configuration().configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Employee.class).
@@ -14,12 +16,15 @@ public class Main {
 
         try {
             Session session = factory.getCurrentSession();
-            Employee emp = new Employee("Alexander", "Smirnov", "IT", 600);
             session.beginTransaction();
-            session.save(emp);
+
+//            Employee emp = session.get(Employee.class, 6);
+//            session.delete(emp);
+
+            session.createQuery("delete Employee where name = 'Alexander'").executeUpdate();
+
             session.getTransaction().commit();
 
-            System.out.println(emp);
             System.out.println("Done!");
         }
         finally {
