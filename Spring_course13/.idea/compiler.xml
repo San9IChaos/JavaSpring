@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Spring_course2" />
+        <module name="Spring_course3" />
+        <module name="Spring_course4" />
+        <module name="Spring_course9" />
+        <module name="Spring_course5" />
+        <module name="Spring_course13" />
+        <module name="Spring_course6" />
+        <module name="Spring_course12" />
+        <module name="Spring_course7" />
+        <module name="Spring_course11" />
+        <module name="Spring_course8" />
+        <module name="Spring_course10" />
+        <module name="Spring_course" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
