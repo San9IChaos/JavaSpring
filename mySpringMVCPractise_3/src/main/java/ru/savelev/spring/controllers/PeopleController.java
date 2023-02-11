@@ -22,7 +22,7 @@ public class PeopleController {
     }
 
     @GetMapping()
-    public String index(Model model) throws SQLException {
+    public String index(Model model) {
         model.addAttribute("people", personDAO.index());
         return "people/index";
     }
