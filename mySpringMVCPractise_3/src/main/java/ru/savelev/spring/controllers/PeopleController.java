@@ -9,7 +9,6 @@ import ru.savelev.spring.dao.PersonDAO;
 import ru.savelev.spring.models.Person;
 
 import javax.validation.Valid;
-import java.sql.SQLException;
 
 @Controller
 @RequestMapping("/people")
@@ -62,6 +61,7 @@ public class PeopleController {
         personDAO.update(id, person);
         return "redirect:/people";
     }
+
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id") int id) {
         personDAO.delete(id);

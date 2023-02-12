@@ -15,6 +15,7 @@ public class Person {
     @NotEmpty(message = "Email should not be empty")
     @Email(message = "Email should be valid")
     private String email;
+
     public Person() {}
 
     public Person(int id, String name, int age, String email) {
