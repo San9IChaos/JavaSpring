@@ -1,10 +1,16 @@
 package ru.savelev.spring.models;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+
 public class Book {
-    int id;
-    String name;
-    String author;
-    int year;
+    private int id;
+    @NotEmpty(message = "Book must have name")
+    private String name;
+    @NotEmpty(message = "Book must have a author")
+    private String author;
+    @Min(value = 1500, message = "We don't have books older 1500 year")
+    private int year;
 
     public Book() {
     }
