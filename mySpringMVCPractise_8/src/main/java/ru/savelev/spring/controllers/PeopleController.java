@@ -1,5 +1,6 @@
 package ru.savelev.spring.controllers;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import ru.savelev.spring.models.Person;
 import ru.savelev.spring.services.PeopleService;
 
-import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/people")

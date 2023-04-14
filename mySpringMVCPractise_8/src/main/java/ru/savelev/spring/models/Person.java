@@ -1,8 +1,11 @@
 package ru.savelev.spring.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 
-import javax.validation.constraints.*;
 
 @Entity
 @Table(name = "Person")
