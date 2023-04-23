@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mySpringMVCPractise_7" />
+        <module name="mySpringMVCPractise_8" />
+        <module name="mySpringMVCPractise_9" />
+        <module name="mySpringMVCPractise_3" />
+        <module name="mySpringMVCPractise_4" />
+        <module name="mySpringMVCPractise_5" />
+        <module name="mySpringMVCPractise_6" />
+        <module name="mySpringMVCPractise_1" />
+        <module name="mySpringMVCPractise_2" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
